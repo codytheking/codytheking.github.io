@@ -1,79 +1,168 @@
-<!doctype html/>
+<!doctype html>
+
+<!-- PHP script to clear cache each refresh -->
+<!-- <?php Header("Cache-Control: max-age=3000, must-revalidate"); ?> -->
 
 <html lang="en-us">
     <head>
-    <meta charset="utf-8"/> 
-        <title>The Physics of baseball.</title>
-        <div style="background:linear-gradient( blue, aqua);">
-        <h1 style="font-family:cursive; color: black; font-size:300%;"><u><center>The Physics of Baseball</center></u></h1>
-        <h3 style="font-family: verdana; color: black;font-size:200%;"><center>By:<u>Alex Sanna</u></center></h3>
-            <center style="font-size:20; font-family: serif; border-style:solid; border-color:black;border-size:3px;background-color:black;color:aqua;">Period One | Honors Physics</center>
-            <br></br>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131462988-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-131462988-1');
+        </script>
+
+        <!-- no cache -->
+        <meta http-equiv="cache-control" content="no-store">
+
+        <!-- Google verif -->
+        <meta name="google-site-verification" content="3k29qeC6pt_M-0LpqjYSa2BUw1U4ZoIGNlpTNIpHhyo" />
+
+        <!-- Link previews -->
+        <meta property="og:site_name" content="Cody J. King"/>
+        <meta property="og:title" content="Information about Cody J. King including his web developer services and past projects."/>
+        <meta property="og:description" content="Cody J. King is a freelance web developer who currently manages several clients. Find past projects and other information about Cody J. King."/>
+        <meta property="og:image" content="../images/thumbnail.png">
+        <meta property="og:url" content="http://codyjking.com/">
+        <meta property="og:type" content="portfolio"/>
+
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../images/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../images/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../images/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../images/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../images/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../images/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../images/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../images/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../images/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="../images/favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../images/favicons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+
+
+
+        <!-- Bootstrap -->
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+
+        <!-- my CSS file -->
+        <link rel="stylesheet" href="../static/style_07-15-2020-1030.css">
+
+        <!-- CSS Menu -->
+        <link rel="stylesheet" href="../static/css-menu_12-27-2018-2235.css">
+
+        <!-- my JS file -->
+        <script type="text/javascript" src="../static/script_12-28-2017-1135.js"></script>
+
+        <title>Cody J. King</title>
+    </head>
+
+    <body id="top">
+        <div id="navbar">
+            <a href="http://codyjking.com" class="navbar-item">Home</a>
+            <a href="#web-projects" class="navbar-item">Web Projects</a>
+            <a href="#other-projects" class="navbar-item">Other Projects</a>
+            <a href="http://codyjking.com/cycling.html" class="navbar-item">Cycling</a>
+            <a href="#contact-me" class="navbar-item">Contact</a>
         </div>
-        </head>
-    <body style="background-color:black;">
-                    <br></br>
-            <br></br>
-            <br></br>
 
-        <div style="background: linear-gradient(blue, aqua);">
-                      
-            <h1 style="font-family:fantasy; font-size: 200%; color: white;"><u>Introduction:</u></h1>
-          <h3 style="font-size:20;font-family: verdana; color:white;">This website will introduce you to the physics behind that 95mph fastball coming off the mound. We will address the three main forces involved in a baseballs travel and how they effect the movement, speed and direction of the ball. First, we must adress the main charecteristics of a baseball. Gravity, The Magnus Force and many types of drag all contribute to a pitchs movement and speed. Lets Begin!!</h3>
-            <br></br>
-<br></br>
-             </div>
-<br></br>
-<br></br>
-<br></br>
-<div style="background:linear-gradient(blue,aqua);">
-    <p style="color:white; font-family: fantasy; font-size:200%;"><u>Charecteristics of the baseball</u></p> 
-    <h3 style="font-size:20;font-family: verdana; color:white;">Lets begin with adressing some main facts about a baseball. A proffesional leauge baseball weighs between 5 and 5.25 ounces and has a circumference of between 9 and 9.25 inches. This means that the baseballs adverage mass is around 145 grams. With a fastball, the pitches velocity tends to be greater than that of a changeup or curveball.  </h3>
-    <br></br>
-<br></br>
-</div>
-<br></br>
-<br></br>
-<br></br>
-             <div style="background:linear-gradient(blue,aqua);">
-                 <h1 style="size:200%;font-family: fantasy;color:white;"><u>How Gravity affects a speeding baseball</u></h1>
-                 <h3 style="font-size:20;font-family: verdana; color:white;">As we all know, the Earths gravity pulls everything toward its core. Well the same is true with the baseball. After being released from the pitchers hand, gravity does what is expected, pulls it down. If we take a curveball for example, it goes up then goes down. The pitcher exerts a force on the ball to cause it to go up, then when it reaches its peak, gravity pulls it down giving the curveball its destictive hook. On the other hand, a fastball is constantly pulled down throughout its travel from the mound. The pitchers mound is elevated causing the pitch to gain speed due to gravity pulling it down therefor giving it downward momentum. This also means that a baseball has acceleration due to gravity!</h3>
-        
-<br></br>
-<br></br>
+        <div id="container">
+            <div id="about-me">
+                <h2>This is the site of Cody J. King</h2>
+                <hr />
+                <h4>I do freelance work for several clients and you can find some examples of my work here. I am familiar with many languages, but mostly use Java, C++, Python, Ruby, and MySQL. I am also a high school computer science and robotics teacher.</h4>
+                <img src="../images/me.jpg" alt="self-portrait"/>
+            </div>
 
-</div>
+            <div id="web-projects">
+                <h1>Web Projects</h1>
+                <hr />
+                <a href="http://jcwedding.codyjking.com/" target="_blank">Check out my wedding website.</a>
+            </div>
 
-<br></br>
-<br></br>
-<br></br>
-            <div style="background:linear-gradient( blue, aqua);">
-                <p style="color:white;font-family:fantasy;font-size: 200%;"><u>How drag affects the  baseball.</u></p>
-<p style="font-size:20;font-family: verdana; color:white;">There are many types of drag involved in a baseballs speed and movement. For example, pressure drag and vicious drag play a key role in the speed of a baseball. Drag is known to slow things down, just like air resistance. At speeds below 50mph, the stickyness of air molecules creates a force known as vicious drag. This form of drag slows the ball down and acts like mid air friction in a way. As we build up some more speed, vicious drag no longer plays a role in the balls speed. The frictional forces start to uneven the air pressure areas acting on the ball and form a high pressure zone in front and a low presssure zone behind it. The higher pressure in front wins the pressure battle and implements a new force, pressure drag which also slows it down.</p>
-<br></br>
-<br></br>
-</div>
-<br></br>
-<br></br>
-<br></br>
-<div style="background:linear-gradient( blue, aqua);">
-    <p style="color:white;font-family:fantasy;font-size: 200%;"><u>The Magnus Force</u></p>
-    <p style="font-size:20;font-family: verdana; color:white;">Up to now, all the forces we have adressed mainly effect the speed of the ball, well thats about to change. The magnus force is the main force that influnces the movement of the baseball. But what is the magnus force?The magnus force is a type of lift that spins a boundary layer of air that clings to its surface as it travels along through the air. Fastballs are only slightly effected by this force while curveballs and sliders are extremly affected by this force.</p>
-<br></br>
-<br></br>
-</div>
-   <br></br>
-<br></br>
-<br></br>
-<p style="font-family: inherit; color: white; font-size:200%;"><u>Verifiable Sources</u></p>
-    <p style="font-size:20;font-family: verdana; color:white;" ><b>1.</b> <a href="http://www.comsol.com/blogs/physics-behind-baseball-pitches/"> Comsol is a great place to find information. </a></p>
-<p style="color:white; font-family: verdana; font-size: 20;">I used comsol.com to help me understand the effects of gravity and the magnus force. I think this is credible because the website is up to date, has external links and is written by a credible arthor. I also used this website to understand how the magnus force effects different types of pitches. Author: Andrew Griesmer.</p>
-<hr></hr>
-<p style="color:white; font-family: verdana; font-size: 20;"> <b>2.</b> <a href="http://entertainment.howstuffworks.com/physics-of-baseball2.html">How Stuff Works</a></p>
-<p style="color:white; font-family: verdana; font-size: 20;">I used howstuffworks.com to understand how the 2 types of drag slow the baseball down throughout its travel. I also used it to clarify that the magnus force opposes gravity. I think that this website is credible becasue it is a newer website and it has external links. Author: William Harris.</p>
-<hr></hr>
-<p style="font-size:20;font-family: verdana; color:white;"><b>3.</b><a href="https://www.grc.nasa.gov/www/k-12/airplane/ballforce.html">Nasa Baseball Physics</a>   </p>
-<p style="color:white; font-family: verdana; font-size: 20;">I think that this site is credible because it has a .gov tag and its written by NASA. I used this website to adress how the magnus force effects movement of baseballs. I also used it to adress the effects of drag and how magnus is a type of lift. Author: NASA</p>
-<hr></hr>
-</body>
-    </html>
+            <div id="other-projects">
+                <h1>Other Projects</h1>
+                <hr />
+                <div class="sections">
+                    <p>Simple Volleyball Passing Stats</p>
+                    <div class="flex-container-sm">
+                        <div><a href="https://apps.apple.com/us/app/volleyball-passing-stats/id1512057199" target="_blank"><i class="fab fa-app-store-ios"></i></a></div>
+                        <div><a href="https://play.google.com/store/apps/details?id=com.codyjking.volleyballpassingstats" target="_blank"><i class="fab fa-android"></i></a></div>
+                        <div><a href="http://passingstats.codyjking.com/" target="_blank"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a></div>
+                        <div><a href="https://github.com/codytheking/VolleyballPassingStats" target="_blank"><i class="fab fa-github"></i></a></div>
+                    </div>
+                </div>
+
+                <div class="sections">
+                    <p>Monthly Calendar Generator Google Sheets Add-On</p>
+                    <div class="flex-container-sm">
+                        <div><a href="https://github.com/codytheking/SheetsCalendarGenerator"><i class="fab fa-github"></i></a></div>
+                    </div>
+                </div>
+
+                <div class="sections">
+                    <p>Student Picker</p>
+                    <div class="flex-container-sm">
+                        <div><a href="https://github.com/codytheking/StudentPicker"><i class="fab fa-github"></i></a></div>
+                    </div>
+                </div>
+
+                <div class="sections">
+                    <p>Slack Web Hook</p>
+                    <div class="flex-container-sm">
+                        <div><a href="https://github.com/codytheking/SlackAhaWebhook"><i class="fab fa-github"></i></a></div>
+                    </div>
+                </div>
+
+                <div class="sections">
+                    <p>Roomba Virtual Wall</p>
+                    <div class="flex-container-sm">
+                        <div><a href="https://github.com/codytheking/IrLib"><i class="fab fa-github"></i></a></div>
+                    </div>
+                </div>
+
+                <div class="sections">
+                    <p>More on Github</p>
+                    <div class="flex-container-sm">
+                        <div><a href="https://github.com/codytheking"><i class="fab fa-github"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact-me">
+                <h1>Contact Me</h1>
+                <hr />
+                <p>I can always be reached by email at kingcodyj at gmail dot com. You can also find me on social media.</p>
+                <div class="flex-container-sm">
+                    <div><a href="https://www.linkedin.com/in/codyjking/"><i class="fab fa-linkedin"></i></a></div>
+                    <div><a href="https://www.instagram.com/mathking314159/"><i class="fab fa-instagram"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"><p>Copyright © 2020 Cody J. King. All rights reserved. <a href="http://codyjking.com/privacy-policy.html">Privacy Policy</a></p></div>
+    </body>
+</html>
