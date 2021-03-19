@@ -9,7 +9,13 @@
     z-index: 99;
 }
 
-.navbar-item {
+.navbar-item-index {
+    float: left;							
+    width: 20%;			
+    padding: 10px 0px;
+}
+
+.navbar-item-privpol {
     float: left;							
     width: 25%;			
     padding: 10px 0px;
