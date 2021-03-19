@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131462988-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-131462988-1');
+        </script>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Artifika" rel="stylesheet">
+
+
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-131462988-1');
+        </script>
+
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./images/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./images/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./images/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./images/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./images/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./images/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./images/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./images/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./images/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="./images/favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./images/favicons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+
+        <title>VBall Pass Calc - Cody King</title>
+
+        <!-- CSS File -->
+        <link rel="stylesheet" type = "text/css" href="static/style-12-28-2018-1500.css" />
+
+        <!-- CSS Menu -->
+        <link rel="stylesheet" href="./static/css-menu_12-27-2018-2235.css">
+
+        <!-- Javascript File -->
+        <script type="text/javascript" src="static/calc_1-2-2019-1405.js"></script>
+    </head>
+
+    <body>
+        <div id="navbar">
+            <a href="../index.html" class="navbar-item">Home</a>
+            <a href="../index.html#web-projects" class="navbar-item">Web Projects</a>
+            <a href="../index.html#other-projects" class="navbar-item">Other Projects</a>
+            <a href="../index.html#contact-me" class="navbar-item">Contact</a>
+        </div>
+
+        <h2 id="instruct">Choose the pass value to add to the total.</h2>
+
+        <!-- Player 1 -->
+        <div class="form-style">
+            <form>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="0" onClick="avg(0, 0);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="1" onClick="avg(1, 0);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="2" onClick="avg(2, 0);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="3" onClick="avg(3, 0);">
+                    </div>
+                </div>
+
+                <p id="answer0" style="margin:12px 0px 12px 5px;"></p>
+                <p id="zeros0" style="margin-left:5px"></p>
+                <p id="ones0" style="margin-left:5px"></p>
+                <p id="twos0" style="margin-left:5px"></p>
+                <p id="threes0" style="margin-left:5px"></p>
+
+                <div class="reset-button">
+                    <input type="Button" class="btn btn-danger btn-large" style="padding:10px;" value="Reset" onClick="resetTotal(0)">
+                </div>
+            </form>
+        </div>
+
+        <!-- Player 2 -->
+        <div class="form-style">
+            <form>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="0" onClick="avg(0, 1);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="1" onClick="avg(1, 1);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="2" onClick="avg(2, 1);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="3" onClick="avg(3, 1);">
+                    </div>
+                </div>
+
+                <p id="answer1" style="margin:12px 0px 12px 5px;"></p>
+                <p id="zeros1" style="margin-left:5px"></p>
+                <p id="ones1" style="margin-left:5px"></p>
+                <p id="twos1" style="margin-left:5px"></p>
+                <p id="threes1" style="margin-left:5px"></p>
+
+                <div class="reset-button">
+                    <input type="Button" class="btn btn-danger btn-large" style="padding:10px;" value="Reset" onClick="resetTotal(1)">
+                </div>
+            </form>
+        </div>
+        
+        <!-- Player 3 -->
+        <div class="form-style">
+            <form>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="0" onClick="avg(0, 2);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="1" onClick="avg(1, 2);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="2" onClick="avg(2, 2);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="3" onClick="avg(3, 2);">
+                    </div>
+                </div>
+
+                <p id="answer2" style="margin:12px 0px 12px 5px;"></p>
+                <p id="zeros2" style="margin-left:5px"></p>
+                <p id="ones2" style="margin-left:5px"></p>
+                <p id="twos2" style="margin-left:5px"></p>
+                <p id="threes2" style="margin-left:5px"></p>
+
+                <div class="reset-button">
+                    <input type="Button" class="btn btn-danger btn-large" style="padding:10px;" value="Reset" onClick="resetTotal(2)">
+                </div>
+            </form>
+        </div>
+        
+        <!-- Player 4 -->
+        <div class="form-style">
+            <form>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="0" onClick="avg(0, 3);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="1" onClick="avg(1, 3);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="2" onClick="avg(2, 3);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="3" onClick="avg(3, 3);">
+                    </div>
+                </div>
+
+                <p id="answer3" style="margin:12px 0px 12px 5px;"></p>
+                <p id="zeros3" style="margin-left:5px"></p>
+                <p id="ones3" style="margin-left:5px"></p>
+                <p id="twos3" style="margin-left:5px"></p>
+                <p id="threes3" style="margin-left:5px"></p>
+
+                <div class="reset-button">
+                    <input type="Button" class="btn btn-danger btn-large" style="padding:10px;" value="Reset" onClick="resetTotal(3)">
+                </div>
+            </form>
+        </div>
+        
+        <!-- Player 5 -->
+        <div class="form-style">
+            <form>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="0" onClick="avg(0, 4);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="1" onClick="avg(1, 4);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="2" onClick="avg(2, 4);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="3" onClick="avg(3, 4);">
+                    </div>
+                </div>
+
+                <p id="answer4" style="margin:12px 0px 12px 5px;"></p>
+                <p id="zeros4" style="margin-left:5px"></p>
+                <p id="ones4" style="margin-left:5px"></p>
+                <p id="twos4" style="margin-left:5px"></p>
+                <p id="threes4" style="margin-left:5px"></p>
+
+                <div class="reset-button">
+                    <input type="Button" class="btn btn-danger btn-large" style="padding:10px;" value="Reset" onClick="resetTotal(4)">
+                </div>
+            </form>
+        </div>
+        
+        <!-- Player 6 -->
+        <div class="form-style">
+            <form>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="0" onClick="avg(0, 5);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="1" onClick="avg(1, 5);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="2" onClick="avg(2, 5);">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="Button" class="btn btn-block btn-primary btn-large" value="3" onClick="avg(3, 5);">
+                    </div>
+                </div>
+
+                <p id="answer5" style="margin:12px 0px 12px 5px;"></p>
+                <p id="zeros5" style="margin-left:5px"></p>
+                <p id="ones5" style="margin-left:5px"></p>
+                <p id="twos5" style="margin-left:5px"></p>
+                <p id="threes5" style="margin-left:5px"></p>
+
+                <div class="reset-button" style="margin-bottom: 90px;">
+                    <input type="Button" class="btn btn-danger btn-large" style="padding:10px;" value="Reset" onClick="resetTotal(5)">
+                </div>
+            </form>
+        </div>
+
+        <div id="footer"><p>Copyright © 2021 Cody J. King. All rights reserved. <a href="../privacy-policy.html">Privacy Policy</a></p></div>
+    </body>
+</html>
+
